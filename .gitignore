@@ -1,0 +1,10 @@
+# build artifacts
+model-watcher-*.zip
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.log
+
+# Node (not used, but common)
+node_modules/
