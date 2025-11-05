@@ -1,27 +1,59 @@
-# Model Watcher (Brave/Chrome extension)
+# 🔍 Perplexity Model Watcher
 
-What it does
-- Watches page network calls (fetch/XHR) and extracts `display_model` and `user_selected_model` from JSON responses.
-- Shows a small draggable/minimizable overlay in the page with display and user-selected values and a colored status chip.
-- Badge: OK (green) when display == user-selected; ! (red) otherwise.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-0.1.1-brightgreen.svg)](https://github.com/apix7/perplexity-model-watcher/releases)
 
-Install (Brave/Chrome)
-1) Open brave://extensions (or chrome://extensions)
-2) Enable "Developer mode"
-3) Click "Load unpacked" and select this folder
+> Brave/Chrome extension that shows Perplexity's `display_model` and `user_selected_model` in‑page and on the toolbar. 🟢 OK when equal, 🔴 on mismatch. Privacy‑friendly, minimal permissions.
 
-Configure
-- Options page lets you toggle the in‑page overlay.
+---
 
-Permissions
-- Minimal: `storage`, `tabs`. Host access is restricted to `https://*.perplexity.ai/*`.
+## ✨ Features
 
-Build/Package
-- Zip for store upload: zip the contents of this folder (all files inside `model-watcher/`).
-- For development, use “Load unpacked” with this folder.
+- 🎯 Real‑time: watches fetch/XHR responses and extracts model fields
+- 🖼️ Overlay: draggable/minimizable card with colored status chip
+- 🟢/🔴 Badge: OK when display == user‑selected; ! on mismatch
+- 🔐 Privacy‑first: no data collection, all local
+- ⚡ Minimal permissions: `storage`, `tabs`, host = `https://*.perplexity.ai/*`
 
-Privacy
-- See PRIVACY.md. No data is collected or sent anywhere; everything runs locally.
+---
 
-License
-- MIT (see LICENSE).
+## 🚀 Install (Developer Mode)
+
+1. Clone the repo (or download the zip and extract):
+   ```bash
+   git clone https://github.com/apix7/perplexity-model-watcher.git
+   cd perplexity-model-watcher
+   ```
+2. Open the extensions page:
+   - Brave: `brave://extensions`
+   - Chrome: `chrome://extensions`
+3. Enable "Developer mode"
+4. Click "Load unpacked" and select this folder
+
+---
+
+## ⚙️ Options
+
+- Toggle the in‑page overlay from the Options page.
+
+---
+
+## 🛡️ Privacy & Permissions
+
+- No data is sent anywhere. See [PRIVACY.md](PRIVACY.md).
+- Permissions:
+  - `storage` — save overlay toggle
+  - `tabs` — update toolbar badge
+  - Host access: `https://*.perplexity.ai/*` only
+
+---
+
+## 🤝 Contributing
+
+PRs welcome! Open an issue for ideas/bugs.
+
+---
+
+## 📄 License
+
+MIT © 2025 Model Watcher contributors. See [LICENSE](LICENSE).
