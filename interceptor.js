@@ -152,9 +152,21 @@
     saveOverlayState(el);
   }
 
+  function setWaiting(){
+    const el = ensureWidget();
+    if (!el) return;
+    const status = el.querySelector('#mw-status');
+    status.className = 'mw-chip mw-chip-wait';
+    status.textContent = 'WAIT';
+    const dispEl = el.querySelector('#mw-display');
+    const selEl = el.querySelector('#mw-selected');
+    if (dispEl) dispEl.textContent = '—';
+    if (selEl) selEl.textContent = '—';
+  }
+
   function report(display_model, user_selected_model){
     const matchesEachOther = !!display_model && !!user_selected_model && display_model === user_selected_model;
-    const matchesExpected = STATE.expected ? (display_model === STATE.expected && user_selected_model === STATE.expected) : false;
+    const matchesExpected = false;
     setWidget(display_model, user_selected_model, matchesEachOther, matchesExpected);
     chrome.runtime.sendMessage({
       type: 'MODEL_UPDATE',
@@ -168,8 +180,8 @@
   function handleText(text){
     const models = extractModelsFromText(text);
     if (!models) return;
-    const key = (models.display_model||'')+'|'+(models.user_selected_model||'');
-    if (key === STATE.lastKey) return;
+    const key = location.href + '|' + (models.display_model||'')+'|'+(models.user_selected_model||'');
+    if (key === STATE.lastKey) return; // avoid spamming identical updates per URL
     STATE.lastKey = key;
     report(models.display_model, models.user_selected_model);
   }
@@ -178,8 +190,13 @@
     window.addEventListener('message', (ev)=>{
       if (ev.source !== window) return;
       const d = ev.data;
-      if (!d || d.__mw !== true || d.type !== 'MODEL_TEXT') return;
-      handleText(d.text);
+      if (!d || d.__mw !== true) return;
+      if (d.type === 'MODEL_TEXT') {
+        handleText(d.text);
+      } else if (d.type === 'URL_CHANGE') {
+        STATE.lastKey = '';
+        setWaiting();
+      }
     });
   }
 

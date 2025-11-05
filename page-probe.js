@@ -36,8 +36,25 @@
     };
   }
 
+  function notifyURL(){
+    try { window.postMessage({ __mw: true, type: 'URL_CHANGE', href: location.href }, '*'); } catch(_) {}
+  }
+
+  function hookHistory(){
+    try {
+      const H = window.history;
+      const origPush = H.pushState;
+      const origReplace = H.replaceState;
+      H.pushState = function(){ const r = origPush.apply(this, arguments); setTimeout(notifyURL, 0); return r; };
+      H.replaceState = function(){ const r = origReplace.apply(this, arguments); setTimeout(notifyURL, 0); return r; };
+      window.addEventListener('popstate', notifyURL);
+      window.addEventListener('load', notifyURL);
+    } catch(_) {}
+  }
+
   try {
     hookFetch();
     hookXHR();
+    hookHistory();
   } catch (_) {}
 })();
