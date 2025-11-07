@@ -15,6 +15,27 @@
 - 🔐 Privacy‑first: no data collection, all local
 - ⚡ Minimal permissions: `storage`, `tabs`, host = `https://*.perplexity.ai/*`
 
+
+---
+
+## ✨ Firefox and mobile devices workaround ✨
+
+1. **Original URL**
+   
+https://www.perplexity.ai/search/analyze-this-week-s-most-signi-l0URrTaLRw2jqeFyjlr8k1
+
+3. **Replace** the segment `search` with `rest/thread`.
+   
+https://www.perplexity.ai/rest/thread/analyze-this-week-s-most-signi-l0URrTaLRw2jqeFyjlr8k1
+
+5. **Open** the new URL in your browser.  
+
+6. Press **Ctrl + F** and search for the strings  
+
+- `display_model`  
+- `user_selected_model`  
+
+
 ---
 
 ## 🚀 Install (Developer Mode)
